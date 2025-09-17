@@ -28,7 +28,10 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <nav>
           <a href="/">Lumora</a>
-          {/* Add navigation links later */}
+          <a href="/services">Services</a>
+          <a href="/about">About Us</a>
+          <a href="/careers">Careers</a>
+          <a href="/contact">Contact</a>
         </nav>
         {children}
         <footer>© 2025 Lumora</footer>
