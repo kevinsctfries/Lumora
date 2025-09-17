@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.scss";
+import Navbar from "./components/navbar/Navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,13 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <nav>
-          <a href="/">Lumora</a>
-          <a href="/services">Services</a>
-          <a href="/about">About Us</a>
-          <a href="/careers">Careers</a>
-          <a href="/contact">Contact</a>
-        </nav>
+        <Navbar />
         {children}
         <footer>© 2025 Lumora</footer>
       </body>
