@@ -11,9 +11,24 @@ export default function Home() {
     <div className={styles.page}>
       <main className={styles.main}>
         <section className={styles.sectionHero}>
-          <h1>Lumora</h1>
-          {/* Design logo section here */}
+          <div className={styles.logo}>
+            <div className={styles.line}></div>
+            <svg
+              viewBox="0 0 800 200"
+              xmlns="http://www.w3.org/2000/svg"
+              className={styles.svgText}>
+              <text
+                x="50%"
+                y="50%"
+                textAnchor="middle"
+                dominantBaseline="middle">
+                Lumora
+              </text>
+            </svg>
+            <div className={styles.line}></div>
+          </div>
         </section>
+
         <section className={styles.sectionContent}>
           <h2>Section</h2>
           <p>
