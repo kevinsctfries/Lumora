@@ -20,7 +20,7 @@ export default function Services() {
 
         <section className={styles.servicesGrid}>
           <div className={styles.serviceCard}>
-            <h2>Lorem Service One</h2>
+            <h3>Lorem Service One</h3>
             <ul>
               <li>Lorem ipsum dolor sit amet</li>
               <li>Consectetur adipiscing elit</li>
@@ -29,7 +29,7 @@ export default function Services() {
           </div>
 
           <div className={styles.serviceCard}>
-            <h2>Lorem Service Two</h2>
+            <h3>Lorem Service Two</h3>
             <ul>
               <li>Ut enim ad minim veniam</li>
               <li>Quis nostrud exercitation</li>
@@ -38,7 +38,7 @@ export default function Services() {
           </div>
 
           <div className={styles.serviceCard}>
-            <h2>Lorem Service Three</h2>
+            <h3>Lorem Service Three</h3>
             <ul>
               <li>Duis aute irure dolor</li>
               <li>In reprehenderit in voluptate</li>
@@ -48,7 +48,7 @@ export default function Services() {
         </section>
 
         <section className={styles.cta}>
-          <h2>Ready to lorem?</h2>
+          <h3>Ready to lorem?</h3>
           <p>
             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
             officia deserunt mollit anim id est laborum.

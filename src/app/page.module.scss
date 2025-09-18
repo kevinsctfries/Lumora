@@ -17,7 +17,7 @@
             .logo {
                 position: relative;
                 z-index: 1;
-                width: 100%;
+                width: 90%;
                 max-width: 800px;
                 display: flex;
                 flex-direction: column;
@@ -149,23 +149,21 @@
                     }
                 }
 
-                .imagePlaceholder {
-                    display: inline-flex;
-                    justify-content: center;
-                    align-items: center;
+                .imageContainer {
+                    position: relative;
+                    display: block;
                     background: var(--secondary);
-                    padding: 2rem;
                     border-radius: 0.75rem;
                     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-                    flex: 0 0 auto;
-                    width: auto;
+                    max-width: 25vw;
+                    aspect-ratio: 4 / 3;
                 }
             }
 
             &:nth-child(odd) .contentRow {
                 flex-direction: row-reverse;
 
-                .imagePlaceholder {
+                .imageContainer {
                     background-color: var(--tertiary);
                 }
             }
@@ -185,9 +183,19 @@
                         width: 100%;
                     }
 
-                    .imagePlaceholder {
-                        width: auto;
+                    .imageContainer {
+                        max-width: 40vw;
                         margin-bottom: 2rem;
+                        background-color: transparent;
+                        box-shadow: none;
+                    }
+                }
+
+                &:nth-child(odd) {
+                    .contentRow {
+                        .imageContainer {
+                            background-color: transparent;
+                        }
                     }
                 }
             }

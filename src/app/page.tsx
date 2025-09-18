@@ -46,13 +46,16 @@ export default function Home() {
                 impedit eos eum sed? Sequi.
               </p>
             </div>
-            <div className={styles.imagePlaceholder}>
-              <Image
-                src="/undraw_mobile-payments_uate.svg"
-                alt="Mobile payments illustration"
-                width={400}
-                height={300}
-              />
+            <div className={styles.imageContainer}>
+              <div className={styles.imagePlaceholder}>
+                <Image
+                  src="/undraw_mobile-payments_uate.svg"
+                  alt="Mobile payments illustration"
+                  fill
+                  style={{ objectFit: "contain" }}
+                  sizes="(max-width: 1200px) 100vw, 400px"
+                />
+              </div>
             </div>
           </div>
         </section>
@@ -74,13 +77,16 @@ export default function Home() {
                 impedit eos eum sed? Sequi.
               </p>
             </div>
-            <div className={styles.imagePlaceholder}>
-              <Image
-                src="/undraw_chat-interface_vofq.svg"
-                alt="Mobile payments illustration"
-                width={400}
-                height={300}
-              />
+            <div className={styles.imageContainer}>
+              <div className={styles.imagePlaceholder}>
+                <Image
+                  src="/undraw_chat-interface_vofq.svg"
+                  alt="Chat illustration"
+                  fill
+                  style={{ objectFit: "contain" }}
+                  sizes="(max-width: 1200px) 100vw, 400px"
+                />
+              </div>
             </div>
           </div>
         </section>
@@ -102,13 +108,16 @@ export default function Home() {
                 impedit eos eum sed? Sequi.
               </p>
             </div>
-            <div className={styles.imagePlaceholder}>
-              <Image
-                src="/undraw_security-on_3ykb.svg"
-                alt="Mobile payments illustration"
-                width={400}
-                height={300}
-              />
+            <div className={styles.imageContainer}>
+              <div className={styles.imagePlaceholder}>
+                <Image
+                  src="/undraw_security-on_3ykb.svg"
+                  alt="Security illustration"
+                  fill
+                  style={{ objectFit: "contain" }}
+                  sizes="(max-width: 1200px) 100vw, 400px"
+                />
+              </div>
             </div>
           </div>
         </section>
