@@ -10,6 +10,7 @@
     right: 0;
     z-index: 1000;
     color: var(--foreground);
+    border-bottom: 1px solid var(--foreground);
 
     .logo {
         font-size: 1.5rem;
