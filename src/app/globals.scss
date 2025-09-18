@@ -3,10 +3,32 @@
   --foreground: #d1d0d0;
   --secondary: #b8b6b6;
   --tertiary: #343434;
+
+  --font-size-sm: clamp(0.875rem, 0.8rem + 0.5vw, 1rem);
+  --font-size-base: clamp(1rem, 0.9rem + 0.6vw, 1.25rem);
+  --font-size-lg: clamp(1.25rem, 1rem + 1vw, 2rem);
+  --font-size-xl: clamp(2rem, 1.5rem + 2vw, 3rem);
+  --font-size-xxl: clamp(3rem, 2rem + 4vw, 5rem);
 }
 
 html {
-  scroll-behavior: smooth;
+  font-size: var(--font-size-base);
+}
+
+h1 {
+  font-size: var(--font-size-xxl);
+}
+
+h2 {
+  font-size: var(--font-size-xl);
+}
+
+h3 {
+  font-size: var(--font-size-lg);
+}
+
+p {
+  font-size: var(--font-size-base);
 }
 
 body {
