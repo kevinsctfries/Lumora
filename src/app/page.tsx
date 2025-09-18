@@ -39,7 +39,12 @@ export default function Home() {
               aut voluptatem impedit!
             </p>
             <div className={styles.imagePlaceholder}>
-              <span>image</span>
+              <Image
+                src="/undraw_mobile-payments_uate.svg"
+                alt="Mobile payments illustration"
+                width={400}
+                height={300}
+              />
             </div>
           </div>
         </section>
@@ -54,7 +59,12 @@ export default function Home() {
               aut voluptatem impedit!
             </p>
             <div className={styles.imagePlaceholder}>
-              <span>image</span>
+              <Image
+                src="/undraw_chat-interface_vofq.svg"
+                alt="Mobile payments illustration"
+                width={400}
+                height={300}
+              />
             </div>
           </div>
         </section>
@@ -69,7 +79,12 @@ export default function Home() {
               aut voluptatem impedit!
             </p>
             <div className={styles.imagePlaceholder}>
-              <span>image</span>
+              <Image
+                src="/undraw_security-on_3ykb.svg"
+                alt="Mobile payments illustration"
+                width={400}
+                height={300}
+              />
             </div>
           </div>
         </section>
