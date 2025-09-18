@@ -31,30 +31,47 @@ export default function Home() {
 
         <section className={styles.sectionContent}>
           <h2>Section</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-            saepe, tempore voluptatibus neque dolores aut quis rem quam corrupti
-            nostrum dolore debitis fugiat vero numquam! Dolores culpa aut
-            voluptatem impedit!
-          </p>
+          <div className={styles.contentRow}>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+              saepe, tempore voluptatibus neque dolores aut quis rem quam
+              corrupti nostrum dolore debitis fugiat vero numquam! Dolores culpa
+              aut voluptatem impedit!
+            </p>
+            <div className={styles.imagePlaceholder}>
+              <span>image</span>
+            </div>
+          </div>
         </section>
+
         <section className={styles.sectionContent}>
           <h2>Section</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-            saepe, tempore voluptatibus neque dolores aut quis rem quam corrupti
-            nostrum dolore debitis fugiat vero numquam! Dolores culpa aut
-            voluptatem impedit!
-          </p>
+          <div className={styles.contentRow}>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+              saepe, tempore voluptatibus neque dolores aut quis rem quam
+              corrupti nostrum dolore debitis fugiat vero numquam! Dolores culpa
+              aut voluptatem impedit!
+            </p>
+            <div className={styles.imagePlaceholder}>
+              <span>image</span>
+            </div>
+          </div>
         </section>
+
         <section className={styles.sectionContent}>
           <h2>Section</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-            saepe, tempore voluptatibus neque dolores aut quis rem quam corrupti
-            nostrum dolore debitis fugiat vero numquam! Dolores culpa aut
-            voluptatem impedit!
-          </p>
+          <div className={styles.contentRow}>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+              saepe, tempore voluptatibus neque dolores aut quis rem quam
+              corrupti nostrum dolore debitis fugiat vero numquam! Dolores culpa
+              aut voluptatem impedit!
+            </p>
+            <div className={styles.imagePlaceholder}>
+              <span>image</span>
+            </div>
+          </div>
         </section>
       </main>
     </div>

@@ -3,108 +3,140 @@
     flex-direction: column;
     min-height: 100vh;
 
-    .sectionHero {
-        background: var(--background);
-        min-height: 100vh;
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        .logo {
+    .main {
+        .sectionHero {
+            background: var(--background);
+            min-height: 100vh;
             width: 100%;
-            max-width: 800px;
             display: flex;
             flex-direction: column;
+            justify-content: center;
             align-items: center;
-            gap: 2rem;
 
-            .svgText {
+            .logo {
                 width: 100%;
-                height: auto;
+                max-width: 800px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 2rem;
 
-                text {
-                    font-family: "Orbitron", sans-serif;
-                    font-size: 120px;
-                    fill: none;
+                .svgText {
+                    width: 100%;
+                    height: auto;
+
+                    text {
+                        font-family: "Orbitron", sans-serif;
+                        font-size: 120px;
+                        fill: none;
+                        stroke: var(--foreground);
+                        stroke-width: 2;
+                        stroke-dasharray: 1000;
+                        stroke-dashoffset: 1000;
+                        animation:
+                            draw 5s ease forwards,
+                            glow 4s infinite alternate;
+                        -webkit-user-select: none;
+                        user-select: none;
+                    }
+                }
+
+                .line {
+                    position: relative;
+                    width: 0%;
+                    height: 2px;
+                    background: var(--foreground);
+                    animation: expand 2s ease forwards;
+
+                    &:first-child {
+                        align-self: flex-start;
+                        animation-delay: 0.25s;
+                    }
+
+                    &:last-child {
+                        align-self: flex-end;
+                        animation-delay: 0.25s;
+                    }
+                }
+            }
+
+            @keyframes expand {
+                from {
+                    width: 0%;
+                    opacity: 0;
+                }
+                to {
+                    width: 100%;
+                    opacity: 1;
+                }
+            }
+
+            @keyframes draw {
+                to {
+                    stroke-dashoffset: 0;
+                }
+            }
+
+            @keyframes glow {
+                from {
                     stroke: var(--foreground);
-                    stroke-width: 2;
-                    stroke-dasharray: 1000;
-                    stroke-dashoffset: 1000;
-                    animation:
-                        draw 5s ease forwards,
-                        glow 4s infinite alternate;
-                    -webkit-user-select: none;
-                    user-select: none;
+                    filter: drop-shadow(0 0 2px var(--foreground));
+                }
+                to {
+                    stroke: #ffffff;
+                    filter: drop-shadow(0 0 2px #ffffff);
                 }
             }
+        }
 
-            .line {
-                position: relative;
-                width: 0%;
-                height: 2px;
+        .sectionContent {
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            &:nth-child(odd) {
+                background: var(--background);
+                color: var(--foreground);
+            }
+
+            &:nth-child(even) {
                 background: var(--foreground);
-                animation: expand 2s ease forwards;
+                color: var(--background);
+            }
 
-                &:first-child {
-                    align-self: flex-start;
-                    animation-delay: 0.25s;
+            h2 {
+                margin-bottom: 2rem;
+            }
+
+            .contentRow {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                max-width: 80%;
+                gap: 2rem;
+                flex-wrap: wrap;
+
+                p {
+                    flex: 1;
+                    min-width: 250px;
                 }
 
-                &:last-child {
-                    align-self: flex-end;
-                    animation-delay: 0.25s;
+                .imagePlaceholder {
+                    flex: 1;
+                    min-width: 250px;
+                    height: 200px;
+                    background: var(--secondary);
                 }
             }
-        }
 
-        @keyframes expand {
-            from {
-                width: 0%;
-                opacity: 0;
+            &:nth-child(odd) .contentRow {
+                flex-direction: row-reverse;
             }
-            to {
-                width: 100%;
-                opacity: 1;
-            }
-        }
-
-        @keyframes draw {
-            to {
-                stroke-dashoffset: 0;
-            }
-        }
-
-        @keyframes glow {
-            from {
-                stroke: var(--foreground);
-                filter: drop-shadow(0 0 2px var(--foreground));
-            }
-            to {
-                stroke: #ffffff;
-                filter: drop-shadow(0 0 2px #ffffff);
-            }
-        }
-    }
-
-    .sectionContent {
-        min-height: 100vh;
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-
-        &:nth-child(odd) {
-            background: var(--background);
-            color: var(--foreground);
-        }
-
-        &:nth-child(even) {
-            background: var(--foreground);
-            color: var(--background);
         }
     }
 }
