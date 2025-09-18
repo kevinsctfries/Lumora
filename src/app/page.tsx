@@ -32,12 +32,20 @@ export default function Home() {
         <section className={styles.sectionContent}>
           <h2>Section</h2>
           <div className={styles.contentRow}>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-              saepe, tempore voluptatibus neque dolores aut quis rem quam
-              corrupti nostrum dolore debitis fugiat vero numquam! Dolores culpa
-              aut voluptatem impedit!
-            </p>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Explicabo saepe, tempore voluptatibus neque dolores aut quis rem
+                quam corrupti nostrum dolore debitis fugiat vero numquam!
+                Dolores culpa aut voluptatem impedit!
+              </p>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic,
+                repudiandae? Mollitia atque distinctio excepturi nihil officiis
+                explicabo porro voluptates quam praesentium at illo, aliquam ut
+                impedit eos eum sed? Sequi.
+              </p>
+            </div>
             <div className={styles.imagePlaceholder}>
               <Image
                 src="/undraw_mobile-payments_uate.svg"
@@ -52,12 +60,20 @@ export default function Home() {
         <section className={styles.sectionContent}>
           <h2>Section</h2>
           <div className={styles.contentRow}>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-              saepe, tempore voluptatibus neque dolores aut quis rem quam
-              corrupti nostrum dolore debitis fugiat vero numquam! Dolores culpa
-              aut voluptatem impedit!
-            </p>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Explicabo saepe, tempore voluptatibus neque dolores aut quis rem
+                quam corrupti nostrum dolore debitis fugiat vero numquam!
+                Dolores culpa aut voluptatem impedit!
+              </p>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic,
+                repudiandae? Mollitia atque distinctio excepturi nihil officiis
+                explicabo porro voluptates quam praesentium at illo, aliquam ut
+                impedit eos eum sed? Sequi.
+              </p>
+            </div>
             <div className={styles.imagePlaceholder}>
               <Image
                 src="/undraw_chat-interface_vofq.svg"
@@ -72,12 +88,20 @@ export default function Home() {
         <section className={styles.sectionContent}>
           <h2>Section</h2>
           <div className={styles.contentRow}>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-              saepe, tempore voluptatibus neque dolores aut quis rem quam
-              corrupti nostrum dolore debitis fugiat vero numquam! Dolores culpa
-              aut voluptatem impedit!
-            </p>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Explicabo saepe, tempore voluptatibus neque dolores aut quis rem
+                quam corrupti nostrum dolore debitis fugiat vero numquam!
+                Dolores culpa aut voluptatem impedit!
+              </p>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic,
+                repudiandae? Mollitia atque distinctio excepturi nihil officiis
+                explicabo porro voluptates quam praesentium at illo, aliquam ut
+                impedit eos eum sed? Sequi.
+              </p>
+            </div>
             <div className={styles.imagePlaceholder}>
               <Image
                 src="/undraw_security-on_3ykb.svg"
