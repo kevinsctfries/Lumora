@@ -150,15 +150,24 @@
                 }
 
                 .imagePlaceholder {
-                    flex: 1;
-                    display: flex;
+                    display: inline-flex;
                     justify-content: center;
                     align-items: center;
+                    background: var(--secondary);
+                    padding: 2rem;
+                    border-radius: 0.75rem;
+                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+                    flex: 0 0 auto;
+                    width: auto;
                 }
             }
 
             &:nth-child(odd) .contentRow {
                 flex-direction: row-reverse;
+
+                .imagePlaceholder {
+                    background-color: var(--tertiary);
+                }
             }
         }
     }
