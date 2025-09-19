@@ -24,7 +24,6 @@
                 align-items: center;
                 gap: 2rem;
                 padding: 1rem;
-                animation: fadeIn 1s ease 0.5s forwards;
 
                 .svgText {
                     width: 100%;
@@ -62,15 +61,6 @@
                         align-self: flex-end;
                         animation-delay: 0.25s;
                     }
-                }
-            }
-
-            @keyframes fadeIn {
-                from {
-                    opacity: 0;
-                }
-                to {
-                    opacity: 1;
                 }
             }
 
@@ -143,6 +133,10 @@
                     min-width: 250px;
                     text-align: left;
 
+                    h2 {
+                        text-align: left;
+                    }
+
                     p {
                         margin-bottom: 1rem;
                         line-height: 1.6;
@@ -151,10 +145,6 @@
 
                 .imageContainer {
                     position: relative;
-                    display: block;
-                    background: var(--secondary);
-                    border-radius: 0.75rem;
-                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
                     max-width: 25vw;
                     aspect-ratio: 4 / 3;
                 }
@@ -163,8 +153,8 @@
             &:nth-child(odd) .contentRow {
                 flex-direction: row-reverse;
 
-                .imageContainer {
-                    background-color: var(--tertiary);
+                h2 {
+                    text-align: right;
                 }
             }
         }
@@ -186,7 +176,7 @@
                     .imageContainer {
                         max-width: 40vw;
                         margin-bottom: 2rem;
-                        background-color: transparent;
+                        background: transparent;
                         box-shadow: none;
                     }
                 }
@@ -194,7 +184,7 @@
                 &:nth-child(odd) {
                     .contentRow {
                         .imageContainer {
-                            background-color: transparent;
+                            background: transparent;
                         }
                     }
                 }
